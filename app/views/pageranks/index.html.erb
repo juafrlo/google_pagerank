@@ -1,6 +1,14 @@
 <h2>Check Google PageRank with latest PR algorithm update on October 2011</h2>
-<%= form_tag(pageranks_path) do %>
+<%= form_tag(pageranks_path, :method => :get) do %>
   <%= label_tag "URL to check:"%><br/>
-  <%= text_field_tag 'URL', '', :class => 'textfield' %><br/>
+  <%= text_field_tag 'url', params[:url], :class => 'textfield' %><br/>
   <%= submit_tag 'Check', :class => 'submit' %>
+
+  
+
+  <% if @rank.present? %>
+    <p>
+      Your pagerank for <%= params[:url] %> is: <%= @rank %>/10
+    </p>
+  <%end %>
 <% end %>
