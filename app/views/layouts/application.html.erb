@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GooglePagerank</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+	<div id="wrapper">
+    <div id="header">
+    	<div id="logo">
+    		<h1>
+    		  Check google pagerank of a web
+    		</h1>
+      </div>
+    </div>    
+    <div id="page">
+		  <div id="content">
+			  <div id="post"><%= yield  %></div>
+		  </div> 
+	    <div id="sidebar">
+				<div id="ad_block_side">
+					<script type="text/javascript"><!--
+					google_ad_client = "ca-pub-6226687068928040";
+					/* Caja cuadrada derecha 3DS blog */
+					google_ad_slot = "2416290810";
+					google_ad_width = 250;
+					google_ad_height = 250;
+					//-->
+					</script>
+					<script type="text/javascript"
+					src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+					</script>
+				</div>
+				<div id="ad_block_side_large">
+					<script type="text/javascript"><!--
+					google_ad_client = "ca-pub-6226687068928040";
+					/* Anuncio 160 x 600 derecha Nintendo 3DS */
+					google_ad_slot = "6290487285";
+					google_ad_width = 160;
+					google_ad_height = 600;
+					//-->
+					</script>
+					<script type="text/javascript"
+					src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+					</script>
+				</div>
+        <!-- 
+        <div id="cloud">
+				  <h3><%= t('.cloud')%></h3>
+ 					<div id="cloud_block">
+  				  <%# tag_cloud Post.tag_counts, %w(css1 css2 css3 css4) do |tag, css_class| %>
+	  			    <%#= link_to tag.name, tag_path(tag.name), :class => css_class %>
+  	  		  <%# end %>
+          </div>
+        </div>
+        -->
+		  </div>
+		<div class="clear"></div>
+	  </div>	<!-- end #page -->	
+  </div>
+
+
+</body>
+</html>
