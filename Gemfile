@@ -35,4 +35,3 @@ group :development do
 end
 
 gem 'PageRankr'                      # Ruby gem for fetching Google PageRank with one query
-gem "mongrel"

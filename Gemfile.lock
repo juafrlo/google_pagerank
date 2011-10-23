@@ -37,7 +37,6 @@ GEM
       multi_json (~> 1.0)
     arel (2.2.1)
     builder (3.0.0)
-    cgi_multipart_eof_fix (2.5.0)
     coffee-rails (3.1.1)
       coffee-script (>= 2.2.0)
       railties (~> 3.1.0)
@@ -46,12 +45,9 @@ GEM
       execjs
     coffee-script-source (1.1.2)
     columnize (0.3.4)
-    daemons (1.1.4)
     erubis (2.7.0)
     execjs (1.2.9)
       multi_json (~> 1.0)
-    fastthread (1.0.7)
-    gem_plugin (0.2.3)
     hike (1.2.1)
     i18n (0.6.0)
     jquery-rails (1.0.16)
@@ -67,11 +63,6 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.16)
-    mongrel (1.1.5)
-      cgi_multipart_eof_fix (>= 2.4)
-      daemons (>= 1.0.3)
-      fastthread (>= 1.0.1)
-      gem_plugin (>= 0.2.3)
     multi_json (1.0.3)
     nokogiri (1.5.0)
     pg (0.11.0)
@@ -142,7 +133,6 @@ DEPENDENCIES
   coffee-rails (~> 3.1.1)
   jquery-rails
   json
-  mongrel
   pg
   rails (= 3.1.1)
   ruby-debug
