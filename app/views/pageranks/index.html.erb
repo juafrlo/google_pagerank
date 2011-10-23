@@ -1,14 +1,50 @@
 <h2>Check Google PageRank with latest PR algorithm update on October 2011</h2>
+
+<script type="text/javascript"><!--
+  google_ad_client = "ca-pub-6226687068928040";
+  /* Link unit top page rank */
+  google_ad_slot = "0212659375";
+  google_ad_width = 468;
+  google_ad_height = 15;
+  //-->
+  </script>
+  <script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
 <%= form_tag(pageranks_path, :method => :get) do %>
   <%= label_tag "URL to check:"%><br/>
   <%= text_field_tag 'url', params[:url], :class => 'textfield' %><br/>
   <%= submit_tag 'Check', :class => 'submit' %>
-
-  
-
-  <% if @rank.present? %>
-    <p>
-      Your pagerank for <%= params[:url] %> is: <%= @rank %>/10
-    </p>
-  <%end %>
 <% end %>
+
+<% if @rank.present? %>
+  <p>
+    Your pagerank for <%= params[:url] %> is: <%= @rank %>/10
+  </p>
+<%end %>
+
+<br/>
+<script type="text/javascript"><!--
+  google_ad_client = "ca-pub-6226687068928040";
+  /* Link unit bottom PageRank */
+  google_ad_slot = "5718635352";
+  google_ad_width = 468;
+  google_ad_height = 15;
+  //-->
+  </script>
+  <script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+<script type="text/javascript"><!--
+  google_ad_client = "ca-pub-6226687068928040";
+  /* Caja cuadrada bottom PageRank */
+  google_ad_slot = "3914554240";
+  google_ad_width = 336;
+  google_ad_height = 280;
+  //-->
+  </script>
+  <script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
